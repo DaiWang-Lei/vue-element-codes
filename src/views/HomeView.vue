@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <el-container>
+    <el-header class="header">Vue-element-component-test</el-header>
+    <el-container>
+      <el-aside class="aside" style="height: 90vh" width="200px">
+        <my-left-menu />
+      </el-aside>
+      <el-main style="height: 90vh">
+        <router-view />
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import MyLeftMenu from "@/components/privateComponents/MyLeftMenu.vue";
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+  components: { MyLeftMenu },
+};
 </script>
+
+<style lang="less" scoped>
+.header{
+  border-bottom: 1px solid rgb(223, 223, 223);
+
+}
+.aside {
+  border-right: 1px solid rgb(223, 223, 223);
+}
+</style>
