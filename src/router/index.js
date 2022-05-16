@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Input from "../components/eleComponents/Input.vue";
 import Form from "../components/eleComponents/Form.vue";
+import Table from "../components/eleComponents/Table.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -14,6 +15,11 @@ const routes = [
     path: "/form",
     name: "form",
     component: Form,
+  },
+  {
+    path: "/table",
+    name: "table",
+    component: Table,
   },
 ];
 

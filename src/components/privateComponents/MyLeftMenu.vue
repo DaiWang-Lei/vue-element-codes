@@ -28,6 +28,14 @@
             </router-link>
           </el-submenu>
         </el-menu-item-group>
+        <el-menu-item-group >
+          <el-submenu index="1-3">
+            <span slot="title">Table</span>
+            <router-link to="/table">
+              <el-menu-item index="1-3"> Table表格 </el-menu-item>
+            </router-link>
+          </el-submenu>
+        </el-menu-item-group>
         <el-submenu index="1-4">
           <span slot="title">选项4</span>
           <el-menu-item index="1-4-1">选项1</el-menu-item>
