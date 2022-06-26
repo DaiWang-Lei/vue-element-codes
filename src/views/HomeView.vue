@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-header class="header">Vue-element-component-test</el-header>
+    <el-header class="header">Vue-element-component-test-康康的master</el-header>
     <el-container>
       <el-aside class="aside" style="height: 90vh" width="200px">
         <my-left-menu />
